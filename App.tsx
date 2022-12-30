@@ -94,7 +94,8 @@ export default function App() {
                 isDarkMode ? 'app_calculator_navbar_toggle_circle_active' : null
               }`}
             ></div>
-            <img src={isDarkMode ? 'yes' : 'no'} alt="mode" />
+            {/* <img src={isDarkMode ? 'yes' : 'no'} alt="mode" /> */}
+            <p>{isDarkMode ? 'yes' : 'no'}</p>
           </div>
         </div>
         <Header expression={expression} result={result} history={history} />

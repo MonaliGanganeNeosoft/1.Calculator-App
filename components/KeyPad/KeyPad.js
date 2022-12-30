@@ -37,12 +37,14 @@ const KeyPad = (props) => {
       </div>
       <div className="keypad_symbols">
         {symbols.map((item, index) => (
-          <p
-            onClick={() => props.handleKeyPress(item.keyCode, item.value)}
-            key={index}
-          >
-            {item.label}
-          </p>
+          <>
+            <p
+              onClick={() => props.handleKeyPress(item.keyCode, item.value)}
+              key={index}
+            >
+              {item.label}
+            </p>
+          </>
         ))}
       </div>
     </div>
