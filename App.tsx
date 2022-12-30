@@ -95,7 +95,7 @@ export default function App() {
               }`}
             ></div>
             {/* <img src={isDarkMode ? 'yes' : 'no'} alt="mode" /> */}
-            <p>{isDarkMode ? 'yes' : 'no'}</p>
+            <p style={{ color: 'yellow' }}> {isDarkMode ? 'Dark' : 'Light'}</p>
           </div>
         </div>
         <Header expression={expression} result={result} history={history} />
